@@ -58,20 +58,6 @@ img {
 
 /* Base Styles CSS End */
 
-/* .cycle {
-  animation: move 3s infinite;
-}
-
-@keyframes move {
-  0% {
-    transform: translate(0);
-  }
-
-  100% {
-    transform: translate(300px);
-  }
-} */
-
 /* Header Part CSS Start */
 
 /* Navigation Section CSS Start */
@@ -260,6 +246,10 @@ nav.navbar {
   .nav-link {
     padding: 5px 0 !important;
   }
+
+  .login-btn a {
+    font-size: 16px;
+  }
 }
 
 /* Navigation Section CSS End */
@@ -378,7 +368,7 @@ nav.navbar {
 }
 
 .search-input input {
-  width: 100%;
+  width: 70%;
   background: transparent;
   padding: 18px 5px 18px 60px;
   border: none;
@@ -391,12 +381,12 @@ nav.navbar {
 .search-btn button {
   font-size: 20px;
   font-weight: 500;
-  color: #ffffff;
+  color: var(--white);
   padding: 15px 50px;
   position: absolute;
   top: 0px;
   right: 0px;
-  background: #396c03;
+  background: var(--primary);
   border-radius: 100px;
   border: none;
 }
@@ -410,3 +400,69 @@ nav.navbar {
 /* Hero Section CSS End */
 
 /* Hero Part CSS End */
+
+/* Main Part CSS Start */
+
+/* Explore Section CSS Start */
+
+.explore-wrapper {
+  padding: 120px 0;
+}
+
+.explore-content h2 {
+  font-family: "Merienda", cursive;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 130%;
+  color: var(--primary);
+}
+
+.explore-content p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 160%;
+  color: var(--gray);
+}
+
+.explore-btn a {
+  font-weight: 500;
+  font-size: 20px;
+  color: var(--white);
+  padding: 15px 50px;
+  background: var(--primary);
+  border-radius: 100px;
+}
+
+.explore-btn a i {
+  padding-left: 10px;
+}
+
+.delivery-man {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.delivery-man img {
+  max-width: 80%;
+  width: 100%;
+  animation: move 4s infinite;
+}
+
+@keyframes move {
+  0% {
+    transform: translate(0);
+  }
+
+  100% {
+    transform: translate(450px);
+  }
+}
+
+.search-input ::placeholder {
+  font-size: 16px;
+}
+
+/* Explore Section CSS End */
+
+/* Main Part CSS End */

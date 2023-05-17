@@ -66,9 +66,9 @@ img {
 
 nav.navbar {
   width: 100%;
-  background: #ffffff;
+  background: #f0f4ec;
   border-bottom: 1px solid #cdd0c9;
-  padding: 20px 0;
+  padding: 15px 0;
   z-index: 999;
 }
 
@@ -109,6 +109,7 @@ nav.navbar {
   font-weight: 500;
   line-height: 200%;
   color: var(--black);
+  background: #f0f4ec;
   padding: 6px 0px;
   border: none;
 }
@@ -250,3 +251,132 @@ nav.navbar {
 }
 
 /* Navigation Section CSS End */
+
+/* Hero Section CSS Start */
+
+.hero-shape1 {
+  position: absolute;
+  top: -60px;
+  left: 0;
+  z-index: 1;
+}
+
+.hero-shape2 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.hero-wrapper {
+  padding: 110px 0 100px;
+  background: #f0f4ec;
+}
+
+.hero-content h2 {
+  font-family: "Merienda", cursive;
+  font-size: 65px;
+  font-weight: 700;
+  line-height: 130%;
+  color: var(--primary);
+}
+
+.hero-content h4 {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 140%;
+  color: var(--gray);
+  padding-top: 10px;
+}
+
+.delivered {
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  transform: translate(-50%);
+  background: linear-gradient(
+    180deg,
+    #ffffff 0%,
+    rgba(255, 255, 255, 0.4) 100%
+  );
+  backdrop-filter: blur(6px);
+  padding: 18px 28px;
+  border-radius: 8.86914px;
+}
+
+.delivered h2 {
+  margin-bottom: 0;
+  padding-bottom: 5px;
+}
+
+.delivered h2 span {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 130%;
+  color: var(--secondary);
+  padding-left: 10px;
+  margin-bottom: 0;
+}
+
+.delivered h5 {
+  font-size: 21px;
+  font-weight: 600;
+  text-align: center;
+  color: #595959;
+  margin-bottom: 0;
+}
+
+.search-input {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background: #ffffff;
+  padding: 0 10px;
+  border: 2px solid #bacca8;
+  border-radius: 120px;
+}
+
+.search-input::before {
+  position: absolute;
+  content: "";
+  top: 6px;
+  left: 5px;
+  width: 48px;
+  height: 48px;
+  background: var(--secondary);
+  border-radius: 100%;
+}
+
+.search-input input {
+  width: 100%;
+  background: transparent;
+  padding: 18px 5px 18px 60px;
+  border: none;
+}
+
+.search-input input:focus {
+  outline: 0;
+}
+
+.search-btn button {
+  font-size: 20px;
+  font-weight: 500;
+  color: #ffffff;
+  padding: 15px 50px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  background: #396c03;
+  border-radius: 100px;
+  border: none;
+}
+
+.search-input ::placeholder {
+  font-size: 20px;
+  font-weight: 500;
+  color: #c7c7c7;
+}
+
+/* Hero Section CSS End */
+
+/* Hero Part CSS End */
